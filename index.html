@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<title>Note to Self</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+</head>
+<body>
+<!--Your Form Here-->
+	<form action="">
+		<label for="note_text">Note To Self: </label>
+		<input type="text" id="note_text" value="Call your parents"> 
+		<br><br>
+		<label for="note_color">Color:</label>
+		<input type="color"  id="note_color" value="#ADD8E6"> 
+
+
+		<label for="category">Category:</label>
+		<select name="category" id="category">
+			<option value="School">School</option>
+			<option value="Chore">Chore</option>
+			<option value="Work">Work</option>
+			<option value="Pet">Pet</option>
+			<option value="Self Care">Self Care</option>
+		</select>
+
+
+		<label for="">Priority:</label>
+		<input type="radio" name="priority" value="Low">Low
+		<input type="radio" name="priority" value="Med">Med
+		<input type="radio" name="priority" value="High">High
+
+
+		<input type="button" id="add_button" value="Add Sticky Note">
+	</form>
+
+	<ul id="stickies">
+	</ul>
+</body>
+</html>
